@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>39</title>
+</head>
+<body>
+
+<h3>Formularze w tabeli zagnieżdżonej</h3>
+<hr>
+
+<table border="1" width="1000">
+
+<tr>
+    <td valign="top" width="33%">
+        <b>Dane osobowe</b><br><br>
+        <table border="0">
+            <tr>
+                <td>Imię:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nazwisko:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Płeć:</td>
+                <td>
+                    <input type="radio" name="plec"> Kobieta
+                    <input type="radio" name="plec"> Mężczyzna
+                </td>
+            </tr>
+        </table>
+    </td>
+
+    <td valign="top" width="33%">
+        <b>Dane logowania</b><br><br>
+        <table border="0">
+            <tr>
+                <td>Login:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Hasło:</td>
+                <td><input type="password"></td>
+            </tr>
+        </table>
+    </td>
+
+    <td valign="top">
+        <b>Dane adresowe</b><br><br>
+        <table border="0">
+            <tr>
+                <td>Kod pocztowy:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Miasto:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Adres:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Telefon:</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td valign="top">
+        <b>Przedmioty</b><br><br>
+        <table border="0">
+            <tr>
+                <td>Najtrudniejszy 1:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Najtrudniejszy 2:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Najłatwiejszy 1:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Najłatwiejszy 2:</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </td>
+
+    <td valign="top">
+        <b>Nauczyciele</b><br><br>
+        <table border="0">
+            <tr>
+                <td>Ulubiony:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Najlepszy:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Najgorszy:</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </td>
+
+    <td valign="top">
+        <b>Oceny</b><br><br>
+        <table border="0">
+            <tr>
+                <td>Szkoła:</td>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Nauczyciele:</td>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Obsługa:</td>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Sekretariat:</td>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="3" align="right">
+        <input type="submit" value="Zapisz">
+    </td>
+</tr>
+
+</table>
+
+</body>
+</html>
