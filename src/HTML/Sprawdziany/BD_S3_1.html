@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzian z formularza</title>
+</head>
+<body>
+
+<h2>Sprawdzian z formularza</h2>
+<hr>
+
+<form method="post" action="https://silvester.elblag.pl/formularze.php">
+
+    <fieldset style="width: 300px">
+        <legend>Dane osobowe</legend>
+
+        Imię<br>
+        <input type="text" placeholder="wpisz imię" name="imie"><br>
+
+        Nazwisko<br>
+        <input type="text" placeholder="nazwisko" name="nazwisko"><br>
+
+        Data (dd.mm.rrrr)<br>
+        <input type="text" name="data" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}"><br>
+
+        Hasło<br>
+        <input type="password" name="haslo"><br><br>
+
+        Strona szkoły:
+        <a href="https://zsti.elblag.pl/" target="_blank">ZSTI</a>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="width: 300px">
+        <legend>Ankieta</legend>
+
+        Czy tekst idk<br>
+        <input type="text" name="tekst"><br><br>
+
+        Jakaś lokalizacja<br>
+        <select name="lokalizacja">
+            <option value="ameryka">Ameryka</option>
+            <option value="afryka" selected>Afryka</option>
+            <option value="azja" disabled>Azja</option>
+            <option value="antarktyda">Antarktyda</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="width: 300px">
+        <legend>Elementy</legend>
+
+        Po szkole lubię najbardziej:<br>
+        <input type="radio" name="aktywnosc" value="telewizja"> TV<br>
+        <input type="radio" name="aktywnosc" value="spacer"> Spacer<br>
+        <input type="radio" name="aktywnosc" value="sztuka" checked> Sztuka<br>
+        <input type="radio" name="aktywnosc" value="gry" disabled> Gry<br>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="width: 300px">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Wyślij">
+    </fieldset>
+
+</form>
+</body>
+</html>
