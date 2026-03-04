@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="pl">
+    <title>Losowanie liczby</title>
+</head>
+<body>
+    <script>
+        let min = parseInt(prompt("Podaj minimalną liczbę:"))
+        let max = parseInt(prompt("Podaj maksymalną liczbę:"))
+        let los = Math.floor(Math.random() * (max - min + 1)) + min
+        alert("Z przedziału od " + min + " do " + max + " wylosowano liczbę " + los + " .")
+    </script>
+</body>
+</html>
