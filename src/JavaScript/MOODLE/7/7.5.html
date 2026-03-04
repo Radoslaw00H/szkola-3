@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="pl">
+    <title>7.5</title>
+</head>
+<body>
+    <script>
+        let min = parseInt(prompt("Podaj minimalną liczbę:"))
+        let max = parseInt(prompt("Podaj maksymalną liczbę:"))
+        let liczba1 = Math.floor(Math.random() * (max - min + 1)) + min
+        let liczba2 = Math.floor(Math.random() * (max - min + 1)) + min
+        let wynik = Math.ceil(liczba1 / liczba2)
+        document.write(liczba1 + "/" + liczba2 + " &asymp; " + wynik)
+    </script>
+</body>
+</html>
