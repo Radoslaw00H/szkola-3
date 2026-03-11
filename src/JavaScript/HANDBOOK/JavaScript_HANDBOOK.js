@@ -1,0 +1,122 @@
+	/*	 DISCLAIMER 						-->
+	<!-- KOD JEST W 100% TEORETYCZNY 				-->
+	<!-- NIE POWINIEN ANI PRAWDOPODOBNIE 				-->
+	<!-- NIE JEST MOŻLIWY DO URUCHOMIENIA 				-->
+	<!-- PONIŻEJ ZNAJDUJE SIĘ TEORIA Z JAVASCRIPT 			-->
+	<!-- ALA ŚCIĄGAWKA 									*/
+
+// [ZMIENNE] --------------------------------------------------------------------------------------
+	var a = 1				// Zmienna typu var (większe możliwości)
+	let b = 2				// Zmienna typu let (mniejsze możliwości)
+	const c = 3				// Zmienna typu const (constant) (stała)
+// [KOMENTOWANIE] ---------------------------------------------------------------------------
+	// Komentarz obejmujący jedną linijkę
+	Tutaj już nie działa
+	/*
+	Komentarz od do działający na kilkanaście linijek
+	BEZ LIMITU
+	*/
+	/*Działa także w jednej linijce ponieważ jest to zakres od do*/
+	Zostawienie /*			"/*" lub " * /"			*/ może spowodować, że
+	cały kod stanie się komentarzem!
+	// Nie jestem w stanie zacytować tego przykładu
+	// Bez podwania spacji ponieważ cały kod zmienia się w Komentarz
+	// I traci kolory
+	
+// [TWORZENIE WARTOŚCI I MIEJSC NA NIE] ----------------------------------------------
+		let pudelko1			// Stworzenie miejsca 1
+		var pudelko2			// Stworzenie miejsca 2
+		
+// [ARYTMETYKA] -------------------------------------------------------------------------------
+		let liczba1 = 4			// Zmienna z liczba 4
+		let liczba2 = 5			// Zmienna z liczba 5
+		let liczba3 = 6			// Zmienna z liczba 6
+		let wynik			// Stworzenie miejsca na wynik
+		
+		wynik = A+B				// Dodawanie
+		wynik = A-B				// Odejmowanie
+		wynik = A*B				// Mnożenie
+		wynik = A/B				// Dzielenie
+		wynik = A%B				// Reszta
+
+	wynik = liczba3 * liczba2 / liczba1		// Działanie mnozenia i dodawania
+
+// [WPROWADZANIE DANYCH PRZEZ OKIENKA DIALOGOWE] --------------------------
+		var x = parseInt(prompt"")		// Liczby pełne np 10
+		var z = parseFloat(prompt"")		// Liczby z ułamkiem np 10.32
+		
+// [OKIENKA DIALOGOWE] --------------------------------------------------------------------
+	alert("Cośtam")			// Wyskoczy okienko dialogowe z napisem "Cośtam"
+	alert("Coś\ntam")		// "\n" zawija wiersz (przenosi tekst na dół)
+	
+	let wartosc = 67		// Wartość to 67 w "wartosc"
+	alert(wartosc)			// Wyswietli wartość z "wartosc"
+	
+// [DOCUMENT WRITE + CONSOLE LOG] ----------------------------------------------------
+	let jol = 69							// Zmienna jol równa 69
+	let loj = 71							// Zmienna loj równa 71
+	document.write("Wynik:"+" "+loj)				// "+" dokleja "" i '' jest na tekst 
+	console.log("Tu nie ma wyniku")					// Wyświetli sam tekst
+	console.log(jol)						// Wyświetli wartość jol w konsoli
+	document.write(jol)						// Wyświetli wartość jol na ekranie
+	document.write(jol+loj) / console.log(jol-loj) 			// Obliczy i wyświetli
+	
+// [ŚREDNIKI] ------------------------------------------------------------------------------------
+	/* 	Znak ";" służy tylko i wyłącznie do nowej linii, jednak nie ma takiej
+	potrzeby aby go pisać kiedy piszemy linijka po linijce	*/
+	var x = 7; var u = 2; document.write(x+u);
+	// To to samo co
+	var x = 7
+	var u = 2
+	document.write(x+u)
+	
+// [ZACHOWANIE ZMIENNYCH] ------------------------------------------------------------------------------
+	let i					// Pusta zmienna "i"
+	document.write(i)			// Wyświetla "undefined" (ang. niezdefiniowany/a)
+	
+// [INKREMENTACJA I DEKREMENTACJA] ------------------------------------------------------------------
+	let p = 1				// Zmienna p równa 1
+	p++					// Dodanie 1 do p (inkrementacja)
+	++p					// Dodanie 1 do p (inkrementacja)
+	p--					// Odjęcie 1 od p (dekrementacja)
+	--p					// Odjęcie 1 od p (dekrementacja)
+	
+// [ZNAKI WIĘKSZOŚCI MNIEJSZOŚCI RÓWNOŚCI ITP] -------------------------------------------------
+	let r = 371		// Zmienna r równa 371
+	let rT = 371		// Zmienna rT równa 371
+	var T = 927		// Zmienna 927 równa 927
+
+	<=	// Większy lub równy
+	>=	// Mniejszy lub równy
+	==	// Równy
+	===	// Równy (dosłownie)
+	!=	// Nie równy
+	
+// [MATH.X] -----------------------------------------------------------------------------------------
+	a = 2,5			// Zmienna a równa 2
+	b = 3			// Zmienna b równa 3
+	wynik = 0		// Zmienna wynik równa 0
+	wynik = Math.pow(a, b)	// Zmienna wynik a do potęgi b
+	wynik = Math.sqrt1_2	// Zmienna wynik pierwiastkiem liczby 1/2 (0,5) 
+	wynik = Math.round()	// Zmienna wynik losowa
+	wynik = Math.sqrt2	// Zmienna wynik pierwiastkiem liczby 2
+	wynik = Math.PI		// Zmienna wynik równa PI (3.1415...)
+	wynik = Math.ceil	// Zmienna wynik zaokrąglona w górę
+	wynik = round(a)	// Zmienna wynik zaokrąglona według standardowych zasad 
+	wynik = sqrt(a)		// Zmienna wynik pierwiastkiem kwadratowym a
+	wynik = floor(a)	// Zmienna wynik zaokrąglona w dół
+
+[MATH.X] -----------------------------------------------------------------------------------------
+	let o = 17		// Zmienna o równa 17
+	let p = 12		// Zmienna p równa 12
+	let k = 9		// Zmienna k równa 9
+	
+	if (p < o) {					// Jeżeli o jest większe od p
+		document.write("O jest większe od P")	// Pokaż na ekranie
+	}
+	else if (k > p) {				// Jeżeli k jest mniejsze od p
+		document.write("K jest mniejsze od P")	// Pokaż na ekranie
+	}
+	else {						// Inne warianty
+		document.write("Cośtam")		// Pokaż na ekranie
+	}
